@@ -14,4 +14,4 @@ customer_lifecycle_status2 <- sales$customer_lifecycle_status[1:100]
 dataframe2 <- data.frame(contact_id2, customer_lifecycle_status2, order_id2, purchase_date2, quantity2, sales_amount2)
 
 
-ggplot(dataframe2, aes(x = contact_id2, y = purchase_date2, colour = sales_amount2)) + geom_point()
+ggplot(dataframe2, aes(x = contact_id2, y = quantity2, colour = sales_amount2)) + geom_point()
